@@ -1,5 +1,17 @@
-number1 =int(input('Введіть перше число'))
-number2 = int(input('Введіть друге число'))
-number3 = int(input('Введіть третє число'))
-average = (number1 + number2 + number3)/3
-print ('cереднє арифметичне трьох чисел =', average)
+number1 = float(input('Перше число: '))
+number2 = float(input('Друге число: '))
+action = input('Дія (+, -, *, /): ')
+
+if action == '+':
+    print(number1 + number2)
+elif action == '-':
+    print(number1 - number2)
+elif action == '*':
+    print(number1 * number2)
+elif action == '/':
+    if number2 == 0:
+        print('Ділення на нуль заборонено !')
+    else:
+        print(number1 / number2)
+else:
+    print('Невідома дія !')
